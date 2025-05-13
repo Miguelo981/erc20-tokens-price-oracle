@@ -25,7 +25,7 @@ import {
   const res = (await publicClient.readContract({
     address: TOKEN_CONSUMER_ADDRESS,
     abi: TOKEN_CONSUMER_ABI,
-    functionName: "getLastPrice",
+    functionName: "getPrice",
     args: [DEFAULT_TOKEN_SYMBOL, DEFAULT_CURRENCY],
   })) as [bigint, bigint];
 
